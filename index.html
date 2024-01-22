@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-['Manrope']">
+    <div class="sm:px-24 px-4">
+      <nav class="sm:py-8 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="sm:hidden block" src="./Images/hamburder.png" alt="" />
+          <div class="text-4xl font-bold">
+            Hockey<span class="text-[#FF4240]">'</span>s
+          </div>
+        </div>
+        <ul class="hidden sm:flex gap-10 text-[#424247]">
+          <li class="hover:text-error ease-out duration-300">
+            <a href="#">Home</a>
+          </li>
+          <li class="hover:text-error ease-out duration-300">
+            <a href="#">About</a>
+          </li>
+          <li class="hover:text-error ease-out duration-300">
+            <a href="#">Pages</a>
+          </li>
+          <li class="hover:text-error ease-out duration-300">
+            <a href="#">Blog</a>
+          </li>
+          <li class="hover:text-error ease-out duration-300">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="flex items-center gap-4">
+          <img class="hidden sm:block" src="./Images/search.png" alt="" />
+          <button class="btn btn-error text-white">Get Ticket</button>
+        </div>
+      </nav>
+      <div>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full rounded-2xl my-2 sm:my-8" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="rounded-full bg-black w-10 h-10 flex justify-center items-center"
+                ><img src="./Images/left.png" alt=""
+              /></a>
+              <a
+                href="#slide2"
+                class="rounded-full bg-black w-10 h-10 flex justify-center items-center"
+                ><img src="./Images/right.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="2xl:block hidden">
+            <div
+              class="card w-96 bg-black shadow-xl image-full sm:absolute top-[78%] right-32"
+            >
+              <div class="card-body">
+                <h2 class="card-title">Meet all the heroes from the field</h2>
+                <p>
+                  It seems like you're asking for information about various
+                  heroes from different fields.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm:hidden block">
+          <div class="card w-96 bg-black shadow-xl image-full">
+            <div class="card-body">
+              <h2 class="card-title">Meet all the heroes from the field</h2>
+              <p>
+                It seems like you're asking for information about various heroes
+                from different fields.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-dashed border-b-2 my-6 sm:my-10 bg-[#0D0D1221]"></div>
+      <div class="flex justify-center flex-col items-center gap-2 sm:gap-3">
+        <div class="text-xl sm:text-4xl font-bold">
+          Professional Hockeys Club
+        </div>
+        <p class="sm:text-base text-sm sm:w-2/4 text-center w-11/12">
+          The Ice Gliders stand as a formidable force in the world of
+          professional hockey, with a rich legacy built on passion, skill, and
+          an unwavering commitment to excellence.
+        </p>
+      </div>
+      <div class="border-dashed border-b-2 my-6 sm:my-10 bg-[#0D0D1221]"></div>
+    </div>
+  </body>
+</html>
