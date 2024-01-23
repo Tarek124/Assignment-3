@@ -20,9 +20,30 @@
   </head>
   <body class="font-['Manrope']">
     <div class="lg:px-24 px-4">
-      <nav class="lg:py-8 py-3 flex items-center justify-between">
+      <!-- <nav class="lg:py-8 py-3 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <img class="lg:hidden block" src="./Images/hamburder.png" alt="" />
+          <div class="relative dropdown">
+            <img tabindex="0" role="button" class="lg:hidden block" src="./Images/hamburder.png" alt="" />
+            <ul tabindex="0"
+              class="menu bg-base-200 w-56 rounded-box absolute top-6 left-0 z-10"
+            >
+              <li class="hover:text-error ease-out duration-300">
+                <a href="#">Home</a>
+              </li>
+              <li class="hover:text-error ease-out duration-300">
+                <a href="#">About</a>
+              </li>
+              <li class="hover:text-error ease-out duration-300">
+                <a href="#">Pages</a>
+              </li>
+              <li class="hover:text-error ease-out duration-300">
+                <a href="#">Blog</a>
+              </li>
+              <li class="hover:text-error ease-out duration-300">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
           <div class="text-4xl font-bold">
             Hockey<span class="text-[#FF4240]">'</span>s
           </div>
@@ -48,7 +69,77 @@
           <img class="hidden lg:block" src="./Images/search.png" alt="" />
           <button class="btn btn-error text-white">Get Ticket</button>
         </div>
-      </nav>
+      </nav> -->
+      <div class="navbar bg-base-100 lg:py-6 py-4">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="p-2 lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
+            >
+            <li class="hover:text-error ease-out duration-300">
+              <a class="text-base" href="#">Home</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a class="text-base" href="#">About</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a class="text-base" href="#">Pages</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a class="text-base" href="#">Blog</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a class="text-base" href="#">Contact</a>
+            </li>
+            </ul>
+          </div>
+          <div class="text-4xl font-bold">
+            Hockey<span class="text-[#FF4240]">'</span>s
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg">
+            <li class="hover:text-error ease-out duration-300">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a href="#">About</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a href="#">Pages</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a href="#">Blog</a>
+            </li>
+            <li class="hover:text-error ease-out duration-300">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex items-center gap-4">
+            <img class="hidden lg:block" src="./Images/search.png" alt="" />
+            <button class="btn btn-error text-white">Get Ticket</button>
+          </div>
+        </div>
+      </div>
       <div class="w-full">
         <div class="carousel w-full relative">
           <div id="slide1" class="carousel-item relative w-full">
@@ -573,7 +664,7 @@
       </div>
       <div class="border-dashed border-b-2 my-6 lg:my-20"></div>
       <div
-        class="box-border flex lg:flex-row flex-col justify-center items-center p-4 shadow-md flex-wrap border rounded-md"
+        class="box-border flex lg:flex-row flex-col justify-center items-center p-8 shadow-md flex-wrap border rounded-md"
       >
         <img src="./Images/11.png" alt="" />
 
@@ -679,7 +770,7 @@
           channels.
         </p>
       </div>
-      <div class="border-dashed border-b-2 my-6 lg:my-20 "></div>
+      <div class="border-dashed border-b-2 my-6 lg:my-20"></div>
       <div
         class="flex lg:flex-row flex-col justify-center lg:items-start items-center"
       >
@@ -824,7 +915,9 @@
           ></div>
         </div>
       </div>
-      <div class="w-full lg:my-0 my-4 lg:w-[50%] flex items-start lg:justify-start">
+      <div
+        class="w-full lg:my-0 my-4 lg:w-[50%] flex items-start lg:justify-start"
+      >
         <div
           class="my-5 mr-2 lg:mr-8 justify-center lg:items-start items-center flex grow basis-[100px] flex-col space-y-5 lg:my-0"
         >
